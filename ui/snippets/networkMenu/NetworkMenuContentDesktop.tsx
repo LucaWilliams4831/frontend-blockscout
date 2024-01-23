@@ -14,7 +14,7 @@ const NetworkMenuPopup = ({ items, tabs }: Props) => {
   const selectedNetwork = items?.find(({ isActive }) => isActive);
   const selectedTab = tabs.findIndex((tab) => selectedNetwork?.group === tab);
   const bgColor = useColorModeValue('blackAlpha.50', 'whiteAlpha.50');
-
+  console.log(items)
   const content = !items || items.length === 0 ? (
     <>
       <Skeleton h="30px" w="120px"/>
